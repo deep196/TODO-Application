@@ -1,0 +1,25 @@
+<html>
+  <body>
+    
+    <table border=1>
+      
+      <tr>
+         <th> Task Name </th>
+         <th> Task Description </th>
+         <th> Task Deadline </th>
+      </tr>
+      
+      {% for item in data %}
+      <tr>
+         <td><a href="/update_task/{{ item[0] }}">{{ item[1] }}</a></td>
+         <td>{{ item[2] }}</td>
+         <td>{{ item[3] }}</td>
+      </tr> 
+      {% endfor %}
+    
+    </table>
+  
+  
+  </body>
+
+</html>
